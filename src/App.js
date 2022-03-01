@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyle from './components/global_style/GlobalStyle';
+import ChatList from './layouts/chat_list/ChatList';
+import SideBar from './layouts/side_bar/SideBar'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<GlobalStyle>
+			<div className='grid'>
+				<div className='row no-gutters'>
+					<SideBar />
+					<ChatList />
+				</div>
+			</div>
+		</GlobalStyle>
+	);
 }
 
 export default App;

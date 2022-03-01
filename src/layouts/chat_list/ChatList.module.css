@@ -1,0 +1,67 @@
+.chatList {
+    background-color: #f5f7fb;
+    padding: 20px 15px;
+    border-right: 2px solid var(--border-color);
+}
+
+.title {    
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #211f42;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 40px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2.3px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.icon + .icon {
+    margin-left: 10px;
+}
+
+.plusIcon {
+    color: var(--purple-color);
+}
+
+.filter {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.filterOption {
+    display: inline-block;
+    font-size: 1.5rem;
+    min-width: 70px;
+    height: 30px;
+    color: #9ca8ba;
+    text-align: center;
+    padding: 7px 8px;
+    border: 1px dashed #dfdfdf;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.filterOption + .filterOption {
+    margin-left: 15px;
+}
+
+.filterOptionActive {
+    color: #4fa3f1;
+    background-color: #edf5fe;
+}
+
+.chatListWrapper {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    max-height: 70vh;
+}

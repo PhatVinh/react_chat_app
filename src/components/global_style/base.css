@@ -1,0 +1,19 @@
+:root {
+    --light-grey-color: #f5f7fb;
+    --grey-color: #e6ebf5;
+    --border-color: #ededed;
+    --purple-color: #6749dc;
+    --purple-hover-color: #eae9f7;
+    --text-color: #878a92;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}

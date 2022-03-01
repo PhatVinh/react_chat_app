@@ -1,0 +1,60 @@
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 18px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.chat + .chat {
+    margin: 0;
+}
+
+.chat:hover {
+    background-color: #e6ebf5;
+}
+
+.chat.active {
+    background-color: #e6ebf5;
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.rightWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.messageWrapper {
+    margin: 0 15px;
+}
+
+.roomName, .messagePreview {
+    margin: 0;
+}
+
+.roomName {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.messagePreview {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.time {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
