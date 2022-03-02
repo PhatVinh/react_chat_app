@@ -9,7 +9,7 @@ const Chat = ({ img, roomName, message, time, active }) => {
         <div className={clsx(styles.rightWrapper)}>
             <img src={img} alt="Avatar" className={clsx(styles.avatar)} />
             <div className={clsx(styles.messageWrapper)}>
-                <h1 className={styles.roomName}>{roomName}</h1>
+                <h3 className={styles.roomName}>{roomName}</h3>
                 <h4 className={styles.messagePreview}>{message}</h4>
             </div>
         </div>

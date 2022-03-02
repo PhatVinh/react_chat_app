@@ -1,0 +1,93 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px;
+}
+.avatarWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.roomName {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-left: 20px;
+    color: var(--text-color);
+}
+
+.infoIcon {
+    stroke-width: 2px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.body {
+    min-height: calc(100vh - 190px);
+    max-height: calc(100vh - 190px);
+    padding: 34px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.messageInputWrapper {
+    /* border-top: 1px solid var(--border-color); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+}
+
+.iconWrapper {
+    cursor: pointer;
+}
+
+.iconWrapper > svg {
+    stroke-width: 1.4px;
+    color: var(--text-color);
+    rotate: 315deg;
+}
+
+.inputFile {
+    display: none;
+}
+
+.inputMessage {
+    min-width: 92%;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid var(--border-color);
+    outline: none;
+    font-size: 1.35rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-left: 8px;
+    color: var(--text-color);
+    resize: none;
+    overflow: scroll;
+    scrollbar-width: none;
+    max-height: 100px;
+}
+
+.sendButton {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2px 2px 0 0;
+    cursor: pointer;
+}
+
+.sendButton > svg {
+    stroke-width: 1.4px;
+    color: var(--purple-color);
+    rotate: 40deg;
+}

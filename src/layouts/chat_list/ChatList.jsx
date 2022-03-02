@@ -72,49 +72,41 @@ const chats = [
         time: '12:34',
         isActive: false
     },
-    // {
-    //     roomName: "Nhóm PHP",
-    //     avatar: <img src={avatar_3}/>
-    //     time: '12:34'
-    // },
-    // {
-    //     roomName: "Nhóm C Sharp",
-    //     avatar: <img src={avatar_1}/>
-    //     time: '12:34'
-    // }
 ];
 
 const ChatList = () => {
     return (
-        <div className={clsx('l-3', styles.chatList)}>
-            {/* Header */}
-            <div className={clsx(styles.header)}>
-                <span className={clsx(styles.title)}>Chats</span>
-                <span>
-                    <SearchIcon className={clsx(styles.icon)} />
-                    <PlusIcon className={clsx(styles.icon, styles.plusIcon)} />
-                </span>
-            </div>
-            <div className={clsx(styles.filter)}>
-                <span className={clsx(styles.filterOption, styles.filterOptionActive)}>All</span>
-                <span className={clsx(styles.filterOption, styles.filterOption)}>Unread</span>
-            </div>
-            {/* Chat list section */}
-            <div className={clsx(styles.chatListWrapper)}>
-                {
-                    chats.map(
-                        (chat, index) => (
-                            <Chat
-                                key={ index }
-                                img={ chat.avatar }
-                                roomName={ chat.roomName }
-                                message={ chat.message }
-                                time={ chat.time }
-                                active={ chat.isActive }
-                            />
+        <div className={clsx('col', 'l-3')}>
+            <div className={clsx(styles.chatList)}>
+                {/* Header */}
+                <div className={clsx(styles.header)}>
+                    <span className={clsx(styles.title)}>Chats</span>
+                    <span>
+                        <SearchIcon className={clsx(styles.icon)} />
+                        <PlusIcon className={clsx(styles.icon, styles.plusIcon)} />
+                    </span>
+                </div>
+                <div className={clsx(styles.filter)}>
+                    <span className={clsx(styles.filterOption, styles.filterOptionActive)}>All</span>
+                    <span className={clsx(styles.filterOption, styles.filterOption)}>Unread</span>
+                </div>
+                {/* Chat list section */}
+                <div className={clsx(styles.chatListWrapper)}>
+                    {
+                        chats.map(
+                            (chat, index) => (
+                                <Chat
+                                    key={index}
+                                    img={chat.avatar}
+                                    roomName={chat.roomName}
+                                    message={chat.message}
+                                    time={chat.time}
+                                    active={chat.isActive}
+                                />
+                            )
                         )
-                    )
-                }
+                    }
+                </div>
             </div>
         </div>
     )

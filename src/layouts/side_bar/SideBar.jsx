@@ -15,26 +15,28 @@ const SideBar = () => {
 	const [theme, setTheme] = useState('light');
 
 	return (
-		<div className={clsx('l-1', styles.sideBar)}>
-			<LogoIcon className={clsx(styles.logo)} />
-			<ul className={clsx(styles.sideBarList)}>
-				<li className={clsx(styles.sideBarListItem, styles.sideBarListItemActive)}>
-					<MessageIcon />
-				</li>
-				<li className={clsx(styles.sideBarListItem)}>
-					{
-						theme === 'light' ? <MoonIcon /> : <SunIcon />
-					}
-				</li>
-			</ul>
-			<ul className={clsx(styles.sideBarList)}>
-				<li className={clsx(styles.sideBarListItem)}>
-					<LogOutIcon />
-				</li>
-				<li className={clsx(styles.sideBarListItem)}>
-					<img className={clsx(styles.sideBarAvatar)} src={avatar_1} alt='avatar' />
-				</li>
-			</ul>
+		<div className={clsx('col', 'l-1', styles.sideBarWrapper)}>
+			<div className={clsx(styles.sideBar)}>
+				<LogoIcon className={clsx(styles.logo)} />
+				<ul className={clsx(styles.sideBarList)}>
+					<li className={clsx(styles.sideBarListItem, styles.sideBarListItemActive)}>
+						<MessageIcon />
+					</li>
+					<li className={clsx(styles.sideBarListItem)}>
+						{
+							theme === 'light' ? <MoonIcon onClick={() => setTheme('dark')} /> : <SunIcon onClick={() => setTheme('light')} />
+						}
+					</li>
+				</ul>
+				<ul className={clsx(styles.sideBarList)}>
+					<li className={clsx(styles.sideBarListItem)}>
+						<LogOutIcon />
+					</li>
+					<li className={clsx(styles.sideBarListItem)}>
+						<img className={clsx(styles.sideBarAvatar)} src={avatar_1} alt='avatar' />
+					</li>
+				</ul>
+			</div>
 		</div>
 	)
 }

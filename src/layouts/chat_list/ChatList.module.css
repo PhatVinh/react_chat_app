@@ -34,8 +34,8 @@
 }
 
 .filter {
-    padding-bottom: 20px;
-    border-bottom: 2px solid var(--border-color);
+    padding: 20px 0 20px;
+    border-top: 2px solid var(--border-color);
 }
 
 .filterOption {
@@ -63,5 +63,5 @@
 .chatListWrapper {
     overflow-y: scroll;
     scrollbar-width: none;
-    max-height: 70vh;
+    max-height: calc(100vh - 200px);
 }

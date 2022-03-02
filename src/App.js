@@ -1,14 +1,15 @@
+import { BrowserRouter } from 'react-router-dom';
+import Router from './routes/Router';
 import GlobalStyle from './components/global_style/GlobalStyle';
-import ChatList from './layouts/chat_list/ChatList';
-import SideBar from './layouts/side_bar/SideBar'
 
 function App() {
 	return (
 		<GlobalStyle>
 			<div className='grid'>
 				<div className='row no-gutters'>
-					<SideBar />
-					<ChatList />
+					<BrowserRouter>
+						<Router />
+					</BrowserRouter>
 				</div>
 			</div>
 		</GlobalStyle>
