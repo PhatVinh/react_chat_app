@@ -37,11 +37,11 @@
     padding: 10px;
     border-radius: 15px;
     margin: 0 15px;
-    max-width: 35%;
+    max-width: 50%;
     font-size: 1.3rem;
 }
 
 .messageWrapperRight > .message {
-    background-color: #6749dc;
+    background-color: var(--purple-color);
     color: #fff;
 }

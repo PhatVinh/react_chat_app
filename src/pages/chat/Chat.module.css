@@ -1,3 +1,8 @@
+.chatWrapper {
+    flex: 1 !important;
+    max-width: unset !important;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -90,4 +95,10 @@
     stroke-width: 1.4px;
     color: var(--purple-color);
     rotate: 40deg;
+}
+
+.infoSectionWrapper {
+    display: flex !important;
+    flex-direction: column;
+    border-left: 2px solid var(--border-color);
 }

@@ -12,11 +12,11 @@
 }
 
 .chat:hover {
-    background-color: #e6ebf5;
+    background-color: #f5f5ff;
 }
 
 .chat.active {
-    background-color: #e6ebf5;
+    background-color: #f5f5ff;
 }
 
 .avatar {
