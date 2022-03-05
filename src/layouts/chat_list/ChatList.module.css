@@ -1,13 +1,14 @@
 .chatList {
-    /* background-color: #f5f7fb; */
+    min-height: 100vh;
     padding: 20px 15px;
+    background-color: var(--background-color);
     border-right: 2px solid var(--border-color);
 }
 
 .title {    
     font-size: 2.1rem;
     font-weight: 500;
-    color: #211f42;
+    color: var(--primary-text-color);
 }
 
 .header {
@@ -22,7 +23,7 @@
     height: 20px;
     stroke-width: 2.3px;
     cursor: pointer;
-    color: var(--text-color);
+    color: var(--secondary-text-color);
 }
 
 .icon + .icon {
@@ -30,7 +31,7 @@
 }
 
 .plusIcon {
-    color: var(--purple-color);
+    color: var(--primary-color);
 }
 
 .filter {
@@ -43,10 +44,10 @@
     font-size: 1.5rem;
     min-width: 70px;
     height: 30px;
-    color: #9ca8ba;
+    color: var(--chat-filter-color);
     text-align: center;
+    border: 1px dashed var(--chat-filter-border);
     padding: 7px 8px;
-    border: 1px dashed #dfdfdf;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -57,7 +58,8 @@
 
 .filterOptionActive {
     color: #4fa3f1;
-    background-color: #edf5fe;
+    background-color: var(--chat-filter-active); 
+    border: none;
 }
 
 .chatListWrapper {

@@ -9,6 +9,7 @@
     align-items: center;
     min-height: 100vh;
     border-right: 2px solid var(--border-color);
+    background-color: var(--background-color);
 }
 
 .logo {
@@ -34,23 +35,23 @@
 }
 
 .sideBarListItem:hover {
-    background-color: var(--light-grey-color);
+    background-color: var(--secondary-color);
 }
 
 .sideBarListItem > svg {
-    color: var(--text-color);
+    color: var(--secondary-text-color);
 }
 
 .sideBarListItemActive, .sideBarListItemActive:hover {
-    background-color: var(--purple-hover-color);
+    background-color: var(--secondary-color);
 }
 
 .sideBarListItemActive > svg {
-    color: var(--purple-color);
+    color: var(--primary-color);
 }
 
 .sideBarAvatar {
     width: 42px;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--primary-text-color);
     border-radius: 50%;
 }

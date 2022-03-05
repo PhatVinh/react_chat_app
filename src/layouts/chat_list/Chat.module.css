@@ -12,11 +12,11 @@
 }
 
 .chat:hover {
-    background-color: #f5f5ff;
+    background-color: var(--secondary-color);
 }
 
 .chat.active {
-    background-color: #f5f5ff;
+    background-color: var(--secondary-color);
 }
 
 .avatar {
@@ -42,18 +42,18 @@
 .roomName {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--primary-text-color);
 }
 
 .messagePreview {
     margin-top: 5px;
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--secondary-text-color);
 }
 
 .time {
-    color: var(--text-color);
+    color: var(--secondary-text-color);
     font-size: 1.2rem;
     font-weight: 500;
 }

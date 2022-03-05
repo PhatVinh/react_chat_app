@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
 import { ReactComponent as LogoIcon } from '../../assets/icons/logo.svg';
 import { ReactComponent as MessageIcon } from '../../assets/icons/message-square.svg';
@@ -8,11 +8,13 @@ import { ReactComponent as MoonIcon } from '../../assets/icons/moon.svg';
 import { ReactComponent as SunIcon } from '../../assets/icons/sun.svg';
 import avatar_1 from '../../assets/images/avatar_1.jpg';
 import styles from './SideBar.module.css';
-
+import { ThemeContext } from '../../services/context';
+import { ThemeAction } from '../../services/reducer';
 
 
 const SideBar = () => {
-	const [theme, setTheme] = useState('light');
+	const [theme, dispatch] = useContext(ThemeContext);
+	const {DARK_THEME_ACTION, LIGHT_THEME_ACTION} = ThemeAction;
 
 	return (
 		<div className={clsx('col', 'l-1', styles.sideBarWrapper)}>
@@ -22,9 +24,9 @@ const SideBar = () => {
 					<li className={clsx(styles.sideBarListItem, styles.sideBarListItemActive)}>
 						<MessageIcon />
 					</li>
-					<li className={clsx(styles.sideBarListItem)}>
+					<li className={clsx(styles.sideBarListItem)} onClick={() => { theme === 'theme-mode-light' ? dispatch(DARK_THEME_ACTION) : dispatch(LIGHT_THEME_ACTION)}} >
 						{
-							theme === 'light' ? <MoonIcon onClick={() => setTheme('dark')} /> : <SunIcon onClick={() => setTheme('light')} />
+							theme === 'theme-mode-light' ? <MoonIcon/> : <SunIcon/>
 						}
 					</li>
 				</ul>

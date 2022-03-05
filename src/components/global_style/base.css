@@ -1,9 +1,9 @@
 :root {
+    --background-color: #fff;
     --light-grey-color: #f5f7fb;
-    --grey-color: #e6ebf5;
     --border-color: #ededed;
-    --purple-color: #6749dc;
-    --purple-hover-color: #eae9f7;
+    --primary-color: #6749dc;
+    --secondary-color: #eae9f7;
     --text-color: #495057;
 }
 

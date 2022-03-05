@@ -9,7 +9,7 @@
     font-weight: 500;
     margin: 40px 0 10px;
     cursor: pointer;
-    color: var(--text-color);
+    color: var(--primary-text-color);
 }
 
 .headerLinkWrapper {
@@ -26,12 +26,12 @@
     bottom: 0;
     left: 0;
     width: 99%;
-    border: 1px solid var(--purple-color);
+    border: 1px solid var(--primary-color);
 
 }
 
 .headerLinkWrapper.active > span {
-    color: var(--purple-color);
+    color: var(--primary-color);
 }
 
 .body {
@@ -62,12 +62,12 @@
     font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
-    color: var(--purple-color);
+    color: var(--primary-color);
 }
 
 .footer > h6 {
     margin: 2px 0 20px 0;
     font-size: 1rem;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--primary-text-color);
 }

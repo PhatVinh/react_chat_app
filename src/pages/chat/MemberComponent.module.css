@@ -21,19 +21,19 @@
     border-radius: 8px;
     width: 30px;
     height: 30px;
-    background-color: var(--purple-hover-color);
+    background-color: var(--secondary-color);
     cursor: pointer;
 }
 
 .leftSection:hover {
-    background-color: #f5f7fb;
+    background-color: var(--border-color);
 }
 
 .leftSection > svg {
     stroke-width: 2px;
     width: 18px;
     height: 18px;
-    color: var(--purple-color);
+    color: var(--primary-color);
 }
 
 .usernameWrapper {
@@ -46,18 +46,6 @@
     margin: 0;
 }
 
-.usernameWrapper > h4 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--text-color);
-}
-
-.usernameWrapper > h5 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #6b6b6b;
-}
-
 .avatar {
     width: 38px;
     height: 38px;
@@ -67,9 +55,13 @@
 }
 
 .username {
-
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-text-color);
 }
 
 .addedBy {
-
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--secondary-text-color);
 }
