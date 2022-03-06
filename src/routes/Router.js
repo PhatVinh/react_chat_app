@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { ChatList, SideBar } from '../layouts';
+import { ChatList, SideBar } from '../components';
 import { Chat } from '../pages';
 
 const Router = () => {

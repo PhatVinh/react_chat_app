@@ -5,12 +5,12 @@ import reportWebVitals from './reportWebVitals';
 import { ThemeContextProvider } from './services/context';
 
 ReactDOM.render(
-  <ThemeContextProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </ThemeContextProvider>,
-  document.getElementById('root')
+	<ThemeContextProvider>
+		<React.StrictMode>
+			<App />
+		</React.StrictMode>
+	</ThemeContextProvider>,
+	document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

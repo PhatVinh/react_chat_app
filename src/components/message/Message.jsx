@@ -1,7 +1,7 @@
 import clsx from 'clsx';
-import styles from './MessageComponent.module.css';
+import styles from './Message.module.css';
 
-const MessageComponent = ({ message, avatar, right }) => {
+const Message = ({ message, avatar, right }) => {
   return (
       <div className={clsx({[styles.messageWrapperRight]: right, [styles.messageWrapper]: !right})}>
           <img src={avatar} alt='Avatar' className={clsx(styles.avatar)}/>
@@ -10,4 +10,4 @@ const MessageComponent = ({ message, avatar, right }) => {
   )
 }
 
-export default MessageComponent
+export default Message

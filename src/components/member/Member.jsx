@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import styles from './MemberComponent.module.css';
+import styles from './Member.module.css';
 import { ReactComponent as InfoIcon } from '../../assets/icons/more-horizontal.svg';
 
-const MemberComponent = ({ username, avatar, addedBy, isAdmin }) => {
+const Member = ({ username, avatar, addedBy, isAdmin }) => {
     return (
         <div className={clsx(styles.memberWrapper)}>
             <div className={clsx(styles.rightSection)}>
@@ -26,4 +26,4 @@ const MemberComponent = ({ username, avatar, addedBy, isAdmin }) => {
     )
 }
 
-export default MemberComponent
+export default Member

@@ -4,8 +4,7 @@ import avatar_2 from '../../assets/images/avatar_2.jpg';
 import { ReactComponent as InfoIcon } from '../../assets/icons/more-horizontal.svg';
 import { ReactComponent as PaperClipIcon } from '../../assets/icons/paperclip.svg';
 import { ReactComponent as SendIcon } from '../../assets/icons/send.svg';
-import MessageComponent from "./MessageComponent";
-import RoomInfo from "./RoomInfo";
+import { Message, RoomInfo } from "../../components";
 
 const user = "Phát";
 const messages = [
@@ -85,7 +84,7 @@ const Chat = () => {
 				<div className={clsx(styles.body)}>
 					{
 						messages.map((message, index) =>
-							<MessageComponent
+							<Message
 								avatar={message.avatar}
 								message={message.message}
 								key={index}

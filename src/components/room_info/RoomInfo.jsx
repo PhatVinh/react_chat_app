@@ -4,7 +4,7 @@ import avatar_1 from '../../assets/images/avatar_1.jpg';
 import avatar_2 from '../../assets/images/avatar_2.jpg';
 import avatar_3 from '../../assets/images/avatar_3.jpg';
 import avatar_4 from '../../assets/images/avatar_4.jpg';
-import MemberComponent from './MemberComponent';
+import { Member } from '../';
 
 const roomMembers = [
     {
@@ -48,7 +48,7 @@ const RoomInfo = () => {
                 <div className={clsx(styles.memberWrapper)}>
                     {
                         roomMembers.map((member, index) => (
-                            <MemberComponent
+                            <Member
                                 username={member.username}
                                 avatar={member.avatar}
                                 addedBy={member.addedBy}
@@ -61,7 +61,7 @@ const RoomInfo = () => {
                 <div className={clsx(styles.adminWrapper)}>
                     {
                         roomAdmins.map((member, index) => (
-                            <MemberComponent
+                            <Member
                                 username={member.username}
                                 avatar={member.avatar}
                                 addedBy={member.addedBy}

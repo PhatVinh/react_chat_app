@@ -4,7 +4,7 @@ import { ReactComponent as PlusIcon } from "../../assets/icons/plus.svg";
 import avatar_1 from '../../assets/images/avatar_1.jpg';
 import avatar_2 from '../../assets/images/avatar_2.jpg';
 import avatar_3 from '../../assets/images/avatar_3.jpg';
-import Chat from "./Chat";
+import { Chat } from "../";
 
 import styles from './ChatList.module.css';
 

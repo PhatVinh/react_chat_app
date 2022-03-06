@@ -9,7 +9,7 @@ import { ReactComponent as SunIcon } from '../../assets/icons/sun.svg';
 import avatar_1 from '../../assets/images/avatar_1.jpg';
 import styles from './SideBar.module.css';
 import { ThemeContext } from '../../services/context';
-import { ThemeAction } from '../../services/reducer';
+import { ThemeAction } from '../../services/actions';
 
 
 const SideBar = () => {
